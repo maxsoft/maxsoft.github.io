@@ -73,10 +73,15 @@ kramdown:
 sass:
   style: :expanded # You might prefer to minify using :compressed
 
+paginate: 10
+paginate_path: /blog/page/:num/
+
 # Use the following plug-ins
 gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
+  - jekyll-paginate
+  # - jekyll-localization # Локализация
 
 # Exclude these files from your production _site
 exclude:
